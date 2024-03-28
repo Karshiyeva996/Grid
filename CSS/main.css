@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+ .container {
+    width: 1000px;
+    margin: 100px auto;
+    
+ } 
+ .title {
+    min-height: 200px;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    display: grid;
+    place-items: center;
+ } 
+ 
+ .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    grid-template-areas: 
+    " mx mx mi mi2"
+    " min  min2  mx2 mx2  "
+    ;
+    gap: 30px;
+    
+
+ } 
+ .mx {
+   background-color: aqua;
+   grid-area: mx;
+ } 
+ 
+ .mi {
+   background-color: yellow;
+   grid-area: mi;
+ } 
+
+ .mi2 {
+   background-color: violet;
+   grid-area: mi2;
+ } 
+
+ .min {
+   background-color: turquoise;
+   grid-area: min;
+ } 
+
+ .min2 {
+   background-color: teal;
+   grid-area: min2;
+ } 
+
+ .mx2 {
+   background-color: steelblue;
+   grid-area: mx2;
+ }
