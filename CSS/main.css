@@ -23,10 +23,12 @@
     grid-template-rows: repeat(4, 1fr); 
     grid-template-areas: 
     " mx mx mi mi2"
+    " mx mx mi mi2"
     " min  min2  mx2 mx2  "
+    "min  min2  mx2 mx2"
     ;
     gap: 30px;
-    
+    overflow: hidden;
 
  } 
  .mx {
